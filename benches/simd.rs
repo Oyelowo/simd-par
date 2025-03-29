@@ -6,6 +6,12 @@ use rand::Rng;
 use std::simd::{f32x8, f64x4, num::SimdFloat};
 // use ::aligned::{Aligned};
 //
+#[cfg(target_arch = "x86_64")]
+use core::arch::x86_64::_mm_prefetch;
+
+// unsafe {
+//     _mm_prefetch(ptr.add(i + 128) as *const i8, _MM_HINT_T0);
+// }
 
 
 use std::alloc::{self, Layout};

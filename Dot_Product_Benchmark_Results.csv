@@ -1,0 +1,19 @@
+,Method,Precision,Execution,Time (ms)
+11,Rayon + SIMD f32 dot unrolled x4,f32,parallel,7.98
+16,Rayon + SIMD f32 aligned dot,f32 (aligned),parallel,7.99
+17,Rayon + SIMD f32 aligned dot unrolled x4,f32 (aligned),parallel,8.59
+10,Rayon + SIMD f32 dot,f32,parallel,9.36
+14,SIMD f32 aligned dot unrolled x4,f32 (aligned),single,14.32
+8,SIMD f32 dot unrolled x4,f32,single,14.54
+7,SIMD f32 dot,f32,single,16.44
+13,SIMD f32 aligned dot,f32 (aligned),single,16.45
+15,Rayon f32 aligned dot naive,f32 (aligned),parallel,16.9
+9,Rayon f32 dot naive,f32,parallel,17.5
+6,Naive f32 dot,f32,single,125.25
+12,Naive f32 aligned dot,f32 (aligned),single,126.28
+5,SIMD + Rayon dot unrolled x4,f64,parallel,151.47
+3,SIMD + Rayon dot with Simd,f64,parallel,157.98
+2,SIMD + Rayon dot No Simd,f64,parallel,201.0
+4,SIMD dot unrolled x4,f64,single,285.66
+1,SIMD sum A,f64,single,312.79
+0,SIMD dot,f64,single,327.03
