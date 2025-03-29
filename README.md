@@ -1,1 +1,3 @@
 # simd-par
+
+cargo bench
